@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="个人网站 - 简洁的前端模板">
+    <title>我的个人网站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="返回首页">MySite</a>
+        <nav aria-label="主导航">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">菜单</button>
+          <ul id="siteNav" class="nav-list">
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#contact">联系</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1>你好，我是<span class="accent">你的名字</span></h1>
+          <p class="subtitle">前端 / 全栈 / AI 应用开发者</p>
+          <div class="cta-group">
+            <a class="btn primary" href="#projects">查看项目</a>
+            <a class="btn" href="#contact">联系我</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>关于我</h2>
+          <p>
+            这里写一段自我介绍。你可以介绍你的技术栈、兴趣方向以及职业目标。
+          </p>
+          <ul class="tags" aria-label="技术栈">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="container">
+          <h2>项目</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>项目 A</h3>
+              <p>一句话描述项目的价值与技术栈。</p>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">预览</a>
+                <a class="btn small outline" href="#" target="_blank" rel="noopener">源码</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>项目 B</h3>
+              <p>一句话描述项目的价值与技术栈。</p>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">预览</a>
+                <a class="btn small outline" href="#" target="_blank" rel="noopener">源码</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>项目 C</h3>
+              <p>一句话描述项目的价值与技术栈。</p>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">预览</a>
+                <a class="btn small outline" href="#" target="_blank" rel="noopener">源码</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>联系</h2>
+          <p>你可以通过以下方式联系我：</p>
+          <ul class="contact-list">
+            <li>邮箱：<a href="mailto:you@example.com">you@example.com</a></li>
+            <li>GitHub：<a href="https://github.com/yourname" target="_blank" rel="noopener">@yourname</a></li>
+            <li>LinkedIn：<a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener">yourname</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> 你的名字. 保留所有权利。</p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+  </html>
+
+
